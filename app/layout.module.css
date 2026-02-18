@@ -1,0 +1,19 @@
+.Layout {
+  max-width: 960px;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 64px 16px 16px;
+}
+
+.Header {
+  display: flex;
+  height: 60px;
+  padding: 0 24px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: darkslateblue;
+}
+
+.Logo {
+  font-size: 24px;
+}
