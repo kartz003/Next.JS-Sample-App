@@ -1,6 +1,7 @@
+import Menu from "@/components/menu";
+import { MenuLink } from "@/components/menu-link";
 import "./globals.css";
 import styles from "./layout.module.css";
-import { MenuLink } from "@/components/menu-link";
 
 export default function RootLayout({ children }) {
   return (
@@ -9,16 +10,10 @@ export default function RootLayout({ children }) {
         <div className={styles.Layout}>
           <header className={styles.Header}>
             <h1 className={styles.Logo}>MyContacts</h1>
-            <nav className={styles.Menu}>
-              <ul>
-                <li>
-                  <MenuLink href="/contacts">Contacts</MenuLink>
-                </li>
-                <li>
-                  <MenuLink href="/about">About</MenuLink>
-                </li>
-              </ul>
-            </nav>
+            <Menu>
+              <MenuLink href="/contacts">Contacts</MenuLink>
+              <MenuLink href="/about">About</MenuLink>
+            </Menu>
           </header>
           {children}
         </div>
